@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+}
+.header {
+height: 100vh;
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.wrapper {
+width: 90%;
+height: 100%;
+max-width: 70em;
+display: flex;
+flex-direction: column;
+position: relative;
+}
+.menu {
+height: 20vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+position: relative;
+}
+.menu img {
+width: 2.8em;
+position: absolute;
+top: 3em;
+right: 3em;
+}
+.navbar {
+background: linear-gradient(90deg, rgba(18,25,79,1) 0%, rgba(30,8,61,1) 57%);
+height: 25em;
+width: 15em;
+position: absolute;
+top: 6em;
+right: 3em;
+display: none;
+}
+.sidebarIconToogle {
+height: 3em;
+width: 3em;
+z-index: 500;
+position: absolute;
+right: 3em;
+top: 3em;
+cursor: pointer;
+background-color: blue;
+opacity: 0;
+}
+#openSidebarMenu {
+display: none;
+}
+#openSidebarMenu:checked ~ .navbar {
+display: block;
+transition: 1s;
+}
+.navbar-inner-container {
+height: 100%;
+width: 100%;
+padding: 1em;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+}
+.navbar-inner-container ul{
+list-style: none;
+}
+.navbar-inner-container a {
+text-decoration: none;
+display: block;
+width: 12em;
+height: 2em;
+background: #12194f;;
+margin: 1em;
+text-align: center;
+line-height: 2em;
+color: #ffffff;
+font-weight: 600;
+}
+.navbar-inner-container a:hover {
+background-color: #1750b930;
+transition: all .2s ease-in-out;
+}
+.introtext {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+height: 60vh;
+}
+.cta-btn {
+width: 100%;
+display: flex;
+align-items: flex-start;
+}
+.cta-btn .cta-btn-red{
+display: block;
+height: 1.5em;
+width: 8em;
+background-color: #F50057;
+color: #ffffff;
+line-height: 1.5;
+text-align: center;
+text-decoration: none;
+font-weight: 700;
+margin-top: 1em;
+}
+.cta-btn .cta-btn-red:hover {
+background-color: #c3084b;
+transition: all .2s ease-in-out;
+}
+.bg-img {
+width: 25em;
+position: absolute;
+bottom: 0;
+left: 0;
+z-index: -10;
+}
